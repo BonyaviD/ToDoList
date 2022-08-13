@@ -23,11 +23,12 @@
   left: 0px; right: 0px;
   height: 60px;
   font-size: 1.8rem;
-
+  
 }
 
-  /*==================================================
-------------------[ To Do List ]--------------------
+  /*================================================== #f4c995; زرد کمرنگ
+------------------[ To Do List ]--------------------#333333; خاکستری پر رنگ 
+#737373;; خاکستری کم رنگ    #f1a43c; زرد پر رنگ
 ================================================== */
 .to-do-list {
   margin: 5% auto;
@@ -36,13 +37,13 @@
 
   /* Style the header */
   .header { 
-    background-color: #f44336;
+    background-color: #f1a33c;
     padding: 30px 40px;
-    padding-top: 30px;
-    color: white;
+    
   }
   
   /* Clear floats after the header */
+
   .header:after {
     content: "";
     display: table;
@@ -59,14 +60,19 @@
     padding: 10px;
     float: left;
     font-size: 16px;
-  }
+
+    }
+    input::placeholder {
+      color: #737373;
+    }
+
   
   /* Style the "Add" button */
   .addBtn {
     padding: 10px;
     width: 25%;
-    background: #d9d9d9;
-    color: #555;
+    background: #333333;
+    color: #f1a33c;
     float: left;
     text-align: center;
     font-size: 16px;
@@ -76,7 +82,7 @@
   }
   
   .addBtn:hover {
-    background-color: #bbb;
+    background-color: #737373;
   }
 
   /* Style the list items */
@@ -85,10 +91,11 @@
     position: relative;
     padding: 12px 8px 12px 40px;
     list-style-type: none;
-    background: #eee;
+    background: #737373;
     font-size: 18px;
     transition: 0.2s;
     border-radius: 5px;
+    color: white;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
@@ -99,29 +106,22 @@
   
   /* Set all odd list items to a different color (zebra-stripes) */
   ul li:nth-child(odd) {
-    background: #f9f9f9;
-  }
-  
-  /* Darker background-color on hover */
-  ul li:hover {
-    background: #ddd;
-  }
-  
-  /* When clicked on, add a background color and strike out text */
-  ul li.checked {
-    background: rgb(0, 0, 0);
-    color: #fff;
-    font-size: 18px;
-    
+    background:  #333333;
   }
   
   /* Add a "checked" mark when clicked on */
   ul li.checked::before {
-    content: "completed ✔ ";
-    width: fit-content;
-    color:rgb(9, 88, 42);
-    font-size: 14px;
+    content: "✔ ";
+    color:#f1a33c;
+    font-size: 15px;
   }
+  ul li.checked::after {
+    content: " Task completed";
+    color:#f1a33c;
+    font-size: 18px;
+  }
+
+
   
   /* Style the close button */
   .close {
@@ -132,8 +132,9 @@
   }
   
   .close:hover {
-    background-color: #f44336;
+    background-color: #f1a33c;
     color: white;
+    border-radius: 4px;
   }
   
   /*==================================================
@@ -141,7 +142,8 @@
 ================================================== */
 
   .section-hr {
-    margin: 60px auto;
+    margin: 5% auto;
+    margin-top: 40%;
     width: 2px;
     height: 175px;
     border: none;
@@ -157,7 +159,6 @@
   background-color: #0e0d0dea;
   min-height: 200px;
   text-align: center;
-  margin-top: 40%;
   color: #f1a43c;
   display: flex;
   align-items: center;
