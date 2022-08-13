@@ -6,25 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div id="myDIV" class="header">
-        <h2 style="margin:5px">My To Do List</h2>
-        <input type="text" id="myInput" placeholder="Your Tasks">
-        <span onclick="newElement()" class="addBtn">Add</span>
+
+    <nav class="nav-bar">
+        <div>To Do List</div>
+    </nav>
+
+    <section class="to-do-list">
+        <div id="myDIV" class="header">
+            <input type="text" id="taskInput" placeholder="Your Tasks">
+            <span onclick="newTask()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+            <li class="checked">hello </li>
+            <li> hi</li>
+            <li class="checked"></li>
+            <li>123</li>
+        </ul>
+    </section>
+
+    <div>
+        <hr class="section-hr" />
     </div>
 
-    <ul id="myUL">
-        <li>Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-    </ul>
+    <footer class="footer">
+        <div class="follow-me">
+            Contact Us
+        </div>
+        <div class="social-box">
+            <a href="https://github.com/BonyaviD" title="Github" target="_blank">
+                <img src="./img/github.png" alt="" />
+            </a>
+            <a href="https://www.instagram.com/bonyavid" title="Instagram" target="_blank">
+                <img src="./img/Instagram-logo.jfif" alt="" />
+            </a>
+            <a href="https://twitter.com/BonyaviD" title="Twitter" target="_blank">
+                <img src="./img/twitter.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/user/NavidprinceOfPersia" title="youtube" target="_blank">
+                <img src="./img/youtube.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/bonyavid/" title="linkedin" target="_blank">
+                <img src="./img/linkedin.png" alt="">
+            </a>
+            <a href="mailto:navidprinceofpersia@gmail.com" title="gmail" target="_blank">
+                <img src="./img/gmail.png" alt="">
+            </a>
+            <div class="copyright">© 2022 All Rights Reserved By NOVA</div>
+        </div>
+    </footer>
 
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>

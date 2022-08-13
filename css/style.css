@@ -1,0 +1,183 @@
+  /* Include the padding and border in an element's total width and height */
+  * {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+
+  }
+  
+  /*==================================================
+------------------[ Navigation ]--------------------
+================================================== */
+
+.nav-bar {
+  background-color: #0e0d0dea;
+  color: #f1a43c;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px #bebebe;
+  left: 0px; right: 0px;
+  height: 60px;
+  font-size: 1.8rem;
+
+}
+
+  /*==================================================
+------------------[ To Do List ]--------------------
+================================================== */
+.to-do-list {
+  margin: 5% auto;
+  width: 500px;
+  }
+
+  /* Style the header */
+  .header { 
+    background-color: #f44336;
+    padding: 30px 40px;
+    padding-top: 30px;
+    color: white;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 5px;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 18px;
+    
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: "completed ✔ ";
+    width: fit-content;
+    color:rgb(9, 88, 42);
+    font-size: 14px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /*==================================================
+------------------[ Section ]--------------------
+================================================== */
+
+  .section-hr {
+    margin: 60px auto;
+    width: 2px;
+    height: 175px;
+    border: none;
+    background-color: #0e0d0dea;
+}
+
+/*==================================================
+------------------[ Footer ]--------------------
+================================================== */
+
+.footer {
+  
+  background-color: #0e0d0dea;
+  min-height: 200px;
+  text-align: center;
+  margin-top: 40%;
+  color: #f1a43c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 25px #bebebe;
+  font-size: 20px;
+}
+
+.footer .social-box {
+  margin-top: 30px;
+}
+
+.footer .social-box a {
+  text-decoration: none;
+  word-spacing: 25px;
+}
+
+.footer .copyright {
+  border-top: 2px solid #f1a43c;
+  margin: 35px 180px 0px 180px;
+  padding-top: 25px;
+}
