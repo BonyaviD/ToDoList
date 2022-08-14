@@ -98,6 +98,7 @@
     transition: 0.2s;
     border-radius: 5px;
     color: white;
+    border-bottom: 2px solid #f1a33c;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
